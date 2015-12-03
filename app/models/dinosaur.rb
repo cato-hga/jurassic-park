@@ -1,14 +1,13 @@
 # == Schema Information
 #
-# Table name: cages
+# Table name: dinosaurs
 #
 #  id         :integer          not null, primary key
-#  active     :boolean
-#  down       :boolean
-#  contain    :integer
+#  name       :text
+#  species    :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class Cage < ActiveRecord::Base
+class Dinosaur < ActiveRecord::Base
 end

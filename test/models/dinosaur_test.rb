@@ -1,18 +1,17 @@
 # == Schema Information
 #
-# Table name: cages
+# Table name: dinosaurs
 #
 #  id         :integer          not null, primary key
-#  active     :boolean
-#  down       :boolean
-#  contain    :integer
+#  name       :text
+#  species    :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
 require 'test_helper'
 
-class CageTest < ActiveSupport::TestCase
+class DinosaurTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end

@@ -1,0 +1,9 @@
+<%= form_for(@cage) do |f| %>
+  <div>
+    <%= f.label :power_status %>
+    <%= f.select :power_status, {include_blank: ''} %>
+  </div>
+  <div>
+    <%= f.submit %>
+  </div>
+<% end %>

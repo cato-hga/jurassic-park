@@ -3,7 +3,7 @@ class CreateDinosaurs < ActiveRecord::Migration
     create_table :dinosaurs do |t|
       t.text :name
       t.text :species
-
+      t.integer :cage_id
       t.timestamps null: false
     end
   end

@@ -5,6 +5,7 @@
 #  id         :integer          not null, primary key
 #  name       :text
 #  species    :text
+#  cage_id    :integer
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

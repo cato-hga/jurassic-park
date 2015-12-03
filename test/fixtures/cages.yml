@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  active: false
+  down: false
+  contain: 1
+
+two:
+  active: false
+  down: false
+  contain: 1

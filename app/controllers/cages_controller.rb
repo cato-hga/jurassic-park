@@ -1,6 +1,6 @@
 class CagesController < ApplicationController
   def index
-    @cage = Cage.all
+    @cages = Cage.all
   end
   def show
     @cage = Cage.find params[:id]
@@ -17,8 +17,8 @@ class CagesController < ApplicationController
     @cage = Cage.new(cage_params)
 
     respond_to do |format|
-      if @cage.save
-        format.html { redirect_to @cage, notice: 'Board was successfully created.' }
+      if @cage.save!
+        format.html { redirect_to @cage, notice: 'Cage was successfully created.' }
         format.json { render :show, status: :created, location: @cage }
       else
         format.html { render :new }
@@ -30,7 +30,7 @@ class CagesController < ApplicationController
   private
 
   def cage_params
-      params.require(:cage).permit(:power_status)
+      params.require(:cage).permit(:power_status, :contain, :id)
     end
 
 end

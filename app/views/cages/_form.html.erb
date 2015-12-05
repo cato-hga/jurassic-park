@@ -1,7 +1,12 @@
 <%= form_for(@cage) do |f| %>
   <div>
     <%= f.label :power_status %>
-    <%= f.select :power_status, {include_blank: ''} %>
+    <%= f.text_field :power_status%>
+    <br>
+  </div>
+  <div>
+    <%= f.label :contain %>
+    <%= f.number_field :contain %>
   </div>
   <div>
     <%= f.submit %>

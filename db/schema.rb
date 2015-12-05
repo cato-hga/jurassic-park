@@ -14,10 +14,10 @@
 ActiveRecord::Schema.define(version: 20151203152917) do
 
   create_table "cages", force: :cascade do |t|
-    t.boolean  "power_status"
+    t.boolean  "power_status", default: false, null: false
     t.integer  "contain"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
   end
 
   create_table "dinosaurs", force: :cascade do |t|

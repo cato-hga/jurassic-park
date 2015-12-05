@@ -3,7 +3,7 @@
 # Table name: cages
 #
 #  id           :integer          not null, primary key
-#  power_status :boolean
+#  power_status :boolean          default(FALSE), not null
 #  contain      :integer
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
